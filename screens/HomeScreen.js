@@ -4,7 +4,7 @@ import {View, StyleSheet, Button, Text} from "react-native";
 function HomeScreen({navigation}) {
     return(
         <View style={styles.container}>
-            <Text style={styles.text}>Página Inicial</Text>
+            <Text style={styles.title}>Página Inicial</Text>
             <Button 
                 title="Ir para detalhes"
                 onPress={() => navigation.navigate('Detalhes')}//Navega para "Detalhes"
@@ -15,17 +15,17 @@ function HomeScreen({navigation}) {
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#f0f4f8'
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#f0f4f8',
     },
-    text: {
-        color: 'blue',
-        fontSize: '30',
+    title: {
+        fontSize: 28,
         fontWeight: 'bold',
-        marginBottom: '20'
-    }
+        marginBottom: 20,
+        color: '#333',
+    },
 });
 
 export default HomeScreen;

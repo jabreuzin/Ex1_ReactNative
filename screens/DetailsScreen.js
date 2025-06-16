@@ -6,7 +6,7 @@ function DetailsScreen({navigation, route}) {
     return(
         <View style={styles.container}>
             <Text style={styles.title}>Detalhes</Text>
-            {itemId && <Text style={styles.text}>Item ID: {itemID}</Text>}
+            {itemId && <Text style={styles.text}>Item ID: {itemId}</Text>}
             {otherParam && <Text style={styles.text}>Outro Parâmetro: {otherParam}</Text>}
             <Button
                 title='Voltar para início'
